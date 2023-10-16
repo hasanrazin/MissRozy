@@ -560,15 +560,15 @@ async def Lazy_start():
                     text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ ⚡", url=lazy_download),  # we download Link
-                                                        InlineKeyboardButton('Sᴛʀᴇᴀᴍ Oɴ Zɪɴꜰʟɪx 📺', url=lazy_stream)]])  # web stream Link
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ⚡", url=lazy_download),  # we download Link
+                                                        InlineKeyboardButton('Sᴛʀᴇᴀᴍ Oɴ Zɪɴꜰʟɪx📺', url=lazy_stream)]])  # web stream Link
                 )
                 await cmd.message.edit(
                     text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ ⚡", url=lazy_download),  # we download Link
-                                                        InlineKeyboardButton('Sᴛʀᴇᴀᴍ Oɴ Zɪɴꜰʟɪx 📺', url=lazy_stream)]])  # web stream Link
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ⚡", url=lazy_download),  # we download Link
+                                                        InlineKeyboardButton('Sᴛʀᴇᴀᴍ Oɴ Zɪɴꜰʟɪx', url=lazy_stream)]])  # web stream Link
                 )
             except Exception as e:
                 print(e)  # print the error message
