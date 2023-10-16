@@ -165,9 +165,9 @@ async def Lazy_start():
                 for i in range(len(message_ids)):
                     await send_media_and_reply(bot, user_id=cmd.from_user.id, file_id=int(message_ids[i]))
 
-            except Exception as err:
-                print(err)
-                await cmd.reply_text(f"ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.!\n\n**Error:** `{err}`")
+          
+         
+            
         
 
     @Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.chat(Config.DB_CHANNEL))
@@ -560,15 +560,15 @@ async def Lazy_start():
                     text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download),  # we download Link
-                                                        InlineKeyboardButton('▶Stream online', url=lazy_stream)]])  # web stream Link
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ ⚡", url=lazy_download),  # we download Link
+                                                        InlineKeyboardButton('Sᴛʀᴇᴀᴍ Oɴ Zɪɴꜰʟɪx 📺', url=lazy_stream)]])  # web stream Link
                 )
                 await cmd.message.edit(
                     text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download),  # we download Link
-                                                        InlineKeyboardButton('▶Stream online', url=lazy_stream)]])  # web stream Link
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ ⚡", url=lazy_download),  # we download Link
+                                                        InlineKeyboardButton('Sᴛʀᴇᴀᴍ Oɴ Zɪɴꜰʟɪx 📺', url=lazy_stream)]])  # web stream Link
                 )
             except Exception as e:
                 print(e)  # print the error message
